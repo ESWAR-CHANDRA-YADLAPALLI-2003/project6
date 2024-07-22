@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        center{
+            background-color: blue;
+            align-content: center;
+            color: white;
+        }
+        body{
+            background-color: orange;
+            align-content: center;
+        }
+        h2{
+            background-color: green;
+            color: white;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <h1>Hello,Good Morning.......</h1>
+        <h1><marquee behavior="" direction="">This content is coming from Backend to Frontend</marquee></h1>
+        <h1>Name : {{name}}</h1>
+        <h1>Age : {{age}}</h1>
+    </center> 
+    <h2>
+    <center>
+        {% if age > 20 %}
+        <h1>Name : {{name}}</h1>
+        <h1>Age : {{age}}</h1>
+        {% else %}
+         <h1>Your age is not suitable for this application</h1>
+         {% endif %}
+            
+    </center>
+     </h2>
+    
+</body>
+</html>
